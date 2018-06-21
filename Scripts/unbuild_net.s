@@ -3,7 +3,7 @@
 ; unbuild_net.s
 ;   Unbuilds a highway network (converts from TP+ binary to DBF format)
 ;   Output files are in the format needed for the Version 2.3 travel model
-;   Updates to compatible with the latest network. This will be the best work ever!!! 
+;   Updates to compatible with the latest network.
 ;-------------------------------------------------------------------------------
 pageheight=32767  ; Set the page height to a large value to minimize page breaks
 
