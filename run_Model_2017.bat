@@ -1,10 +1,9 @@
-:: E:\Data\fy18\CGV2_3_70_Conformity2016_off_cycle_Xmittal\run_Model_2017_base.bat
-:: Version 2.3.70
-:: 10/24/2016 11:13:10 AM
+:: Version 2.3.75
+:: 2018-03-30 Fri 15:44:35
 
 set root=.
-set scenar=2017_base
-set runbat=run_ModelSteps_2017_base.bat
+set scenar=2017
+set runbat=run_ModelSteps_2017.bat
 :: Environment variables for (multistep) distributed processing:
 :: Environment variables for (intrastep) distributed processing:
 ::     use MDP = t/f (for true or false)
