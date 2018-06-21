@@ -1,0 +1,20 @@
+;|\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\|
+;|///////////////////////////////////////////////////////////////////|
+;|// V23_Toll_Minutes.TXT                                            |
+;|///////////////////////////////////////////////////////////////////|
+;|\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\|
+;
+;
+;     =================================================================
+;     = Equivalent Toll Minutes by Time Prd & Vehicle Type            =
+;     = in minutes per 2007 dollar - rm 1/7/11                        =
+;     =================================================================
+;
+;    AM Peak           Midday             PM Peak           Night
+;---------------  ---------------    --------------     --------------
+  SVAMEQM = 2.5     SVMDEQM = 3.0    SVPMEQM = 3.0     SVNTEQM = 3.0 ; <--- SOVs
+  H2AMEQM = 1.5     H2MDEQM = 4.0    H2PMEQM = 2.0     H2NTEQM = 4.0 ; <--- HOVs-2 Occ
+  H3AMEQM = 1.0     H3MDEQM = 4.0    H3PMEQM = 1.0     H3NTEQM = 4.0 ; <--- HOVs-3+Occ
+  CVAMEQM = 2.0     CVMDEQM = 2.0    CVPMEQM = 2.0     CVNTEQM = 2.0 ; <--- Comm Veh
+  TKAMEQM = 2.0     TKMDEQM = 2.0    TKPMEQM = 2.0     TKNTEQM = 2.0 ; <--- Trucks
+  APAMEQM = 2.0     APMDEQM = 2.0    APPMEQM = 2.0     APNTEQM = 2.0 ; <--- Apaxs

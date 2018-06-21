@@ -1,0 +1,170 @@
+Average_Link_Speeds.bat:19::: Note: the original file from assignment is maintained as Assigned_%_iter_%HWY.net
+cleanup\cleanUp_v1.bat:5:for %%H in (pp i1 i2 i3) do (dir ..\2010\*%%H* > cleanUp_files_%%H.txt)
+dateName.bat:7:FOR %%V IN (%1) DO FOR /F "tokens=1-5 delims=/: " %%J IN ("%%~tV") DO copy "%%V" %%~nV_%%L%%J%%K_%%M%%N%%~xV
+HSR_Highway_Skims.bat:19:if exist hov3%_iter_%am_mc.skm del hov3%_iter_%am_mc.skm
+HSR_Highway_Skims.bat:20:copy %_HOV3PATH_%\hov3%_iter_%am_mc.skm hov3%_iter_%am_mc.skm /y
+HSR_Highway_Skims.bat:23:if exist hov3%_iter_%md_mc.skm del hov3%_iter_%md_mc.skm
+HSR_Highway_Skims.bat:24:copy %_HOV3PATH_%\hov3%_iter_%md_mc.skm hov3%_iter_%md_mc.skm /y
+Mode_Choice_TC_V23_Parallel.bat:15:set _TChbw_=%_tcpath_%\i4_HBW_NL_MC.MTT
+Mode_Choice_TC_V23_Parallel.bat:16:set _TChbs_=%_tcpath_%\i4_HBS_NL_MC.MTT
+Mode_Choice_TC_V23_Parallel.bat:17:set _TChbo_=%_tcpath_%\i4_HBO_NL_MC.MTT
+Mode_Choice_TC_V23_Parallel.bat:18:set _TCnhw_=%_tcpath_%\i4_NHW_NL_MC.MTT
+Mode_Choice_TC_V23_Parallel.bat:19:set _TCnho_=%_tcpath_%\i4_NHO_NL_MC.MTT
+Mode_Choice_TC_V23_Parallel.bat:22:if not exist    %_tcpath_%\i4_HBW_NL_MC.MTT goto error
+Mode_Choice_TC_V23_Parallel.bat:23:if not exist    %_tcpath_%\i4_HBS_NL_MC.MTT goto error
+Mode_Choice_TC_V23_Parallel.bat:24:if not exist    %_tcpath_%\i4_HBO_NL_MC.MTT goto error
+Mode_Choice_TC_V23_Parallel.bat:25:if not exist    %_tcpath_%\i4_NHW_NL_MC.MTT goto error
+Mode_Choice_TC_V23_Parallel.bat:26:if not exist    %_tcpath_%\i4_NHO_NL_MC.MTT goto error
+Mode_Choice_TC_V23_Parallel.bat:152:if exist %_iter_%mc_constraint_V23.rpt   del %_iter_%mc_constraint_V23.rpt
+move_output_ver23_v2.bat:41:    move *_%%H*.txt          .\output_toss
+move_output_ver23_v2.bat:56:    move *_%%H*.txt          .\output_keep
+run_ModelSteps_Ver2.3.41_2040_final.bat:110:REM copy *.txt MDP_%useMDP%\*.txt
+run_ModelSteps_Ver2.3.41_2040_final.bat:111:REM copy *.rpt MDP_%useMDP%\*.rpt
+run_ModelSteps_Ver2.3.41_2040_final.bat:112:REM copy *.log MDP_%useMDP%\*.log
+run_ModelSteps_Ver2.3.45_2010.bat:105:REM copy *.txt MDP_%useMDP%\*.txt
+run_ModelSteps_Ver2.3.45_2010.bat:106:REM copy *.rpt MDP_%useMDP%\*.rpt
+run_ModelSteps_Ver2.3.45_2010.bat:107:REM copy *.log MDP_%useMDP%\*.log
+run_ModelSteps_Ver2.3.45_2010_part2.bat:105:REM copy *.txt MDP_%useMDP%\*.txt
+run_ModelSteps_Ver2.3.45_2010_part2.bat:106:REM copy *.rpt MDP_%useMDP%\*.rpt
+run_ModelSteps_Ver2.3.45_2010_part2.bat:107:REM copy *.log MDP_%useMDP%\*.log
+run_ModelSteps_Ver2.3.48_2010.bat:105:REM copy *.txt MDP_%useMDP%\*.txt
+run_ModelSteps_Ver2.3.48_2010.bat:106:REM copy *.rpt MDP_%useMDP%\*.rpt
+run_ModelSteps_Ver2.3.48_2010.bat:107:REM copy *.log MDP_%useMDP%\*.log
+run_ModelSteps_Ver2.3.48_2010_part.bat:105:REM copy *.txt MDP_%useMDP%\*.txt
+run_ModelSteps_Ver2.3.48_2010_part.bat:106:REM copy *.rpt MDP_%useMDP%\*.rpt
+run_ModelSteps_Ver2.3.48_2010_part.bat:107:REM copy *.log MDP_%useMDP%\*.log
+Scripts\Assemble_Skims_AB.s:6:;   iteration (%_iter_%) = 'i1',..,'i4'
+Scripts\Assemble_Skims_BM.s:6:;   iteration (%_iter_%) = 'i1',..,'i4'
+Scripts\Assemble_Skims_CR.s:6:;   iteration (%_iter_%) = 'i1',..,'i4'
+Scripts\Assemble_Skims_MR.s:6:;   iteration (%_iter_%) = 'i1',..,'i4'
+Scripts\Average_Link_Speeds.s:4:Iter ='%_iter_%'
+Scripts\Average_Link_Speeds.s:5:Prev ='%_prev_%'
+Scripts\Highway_Assignment_Parallel.s:97:itr = '%_iter_%'   ;;
+Scripts\Highway_Assignment_Parallel.s:112:PCTADT =   41.7        ; %_AMPF_%  AM PHF (% of traffic in pk hr of period)
+Scripts\Highway_Assignment_Parallel.s:628:PCTADT =   29.4        ; %_AMPF_%  AM PHF (% of traffic in pk hr of period)
+Scripts\Highway_Assignment_Parallel.s:1153:PCTADT =   17.7        ; %_MDPF_%  Midday PHF (% of traffic in pk hr of period)
+Scripts\Highway_Assignment_Parallel.s:1414:PCTADT =   15.0        ; %_NTPF_%  NT PHF (% of traffic in pk hr of period)
+Scripts\Highway_Assignment_Parallel.s:1729:  IF ('%_iter_%' = 'I4')
+Scripts\Highway_Assignment_Parallel.s:1730:      %_iter_%@PRD@SOV = V1_1
+Scripts\Highway_Assignment_Parallel.s:1731:      %_iter_%@PRD@HV2 = V2_1
+Scripts\Highway_Assignment_Parallel.s:1732:      %_iter_%@PRD@HV3 =  V_2
+Scripts\Highway_Assignment_Parallel.s:1733:      %_iter_%@PRD@CV  = V4_1
+Scripts\Highway_Assignment_Parallel.s:1734:      %_iter_%@PRD@TRK = V5_1
+Scripts\Highway_Assignment_Parallel.s:1735:      %_iter_%@PRD@APX = V6_1
+Scripts\Highway_Assignment_Parallel.s:1738:  %_iter_%@prd@VOL = V_1 + V_2                                            ;  Final AM/PM Link Volume
+Scripts\Highway_Assignment_Parallel.s:1739:  %_iter_%@prd@VMT = %_iter_%@prd@VOL * distance                          ;  Final AM/PM link VMT
+Scripts\Highway_Assignment_Parallel.s:1740:  %_iter_%@prd@FFSPD  =SPEEDFOR(@prd@LANE,SPDCLASS)                       ;  Freeflow speed
+Scripts\Highway_Assignment_Parallel.s:1743:  %_iter_%@prd@VC=(%_iter_%@prd@VOL*(@pctadt@/100.0)/@prd@HRLKCAP)        ;  AM/PM VC  ratio
+Scripts\Highway_Assignment_Parallel.s:1744:  %_iter_%@prd@VDF = VCRV((Ftype + 1), %_iter_%@prd@VC)                   ;  AM/PM VDF
+Scripts\Highway_Assignment_Parallel.s:1745:  if (%_iter_%@prd@VDF > 0)  %_iter_%@prd@SPD = %_iter_%@prd@FFSPD / %_iter_%@prd@VDF  ; AM/PM speed (No queuing)
+Scripts\Highway_Assignment_Parallel.s:1753:      WRSPD =ROUND(%_iter_%@prd@VMT * %_iter_%@prd@SPD)
+Scripts\Highway_Assignment_Parallel.s:1754:      WFfSPD=ROUND(%_iter_%@prd@VMT * %_iter_%@prd@FFSPD)
+Scripts\Highway_Assignment_Parallel.s:1757:    CROSSTAB VAR=%_iter_%@prd@VMT,WrSPD,WffSPD,_CNT,FORM=12cs,
+Scripts\Highway_Assignment_Parallel.s:1760:     COMP=WrSPD/%_iter_%@prd@VMT, FORM=12.2cs,   ; AVG INITIAL SPD
+Scripts\Highway_Assignment_Parallel.s:1761:     COMP=WffSPD/%_iter_%@prd@VMT, FORM=12.2cs     ; AVG FINAL SPD
+Scripts\Highway_Assignment_Parallel.s:1763:; Crosstab %_iter_%@prd@VMT,WOSPD,WNSPD,_CNT2 by ATYPE and FTYPE
+Scripts\Highway_Assignment_Parallel.s:1764:     CROSSTAB VAR=%_iter_%@prd@VMT,WrSPD,WffSPD,_CNT, FORM=12cs,
+Scripts\Highway_Assignment_Parallel.s:1767:     COMP=WrSPD/%_iter_%@prd@VMT, FORM=12.2cs,   ; AVG INITIAL SPD
+Scripts\Highway_Assignment_Parallel.s:1768:     COMP=WffSPD/%_iter_%@prd@VMT, FORM=12.2cs     ; AVG FINAL SPD
+Scripts\Highway_Assignment_Parallel.s:1772:    CROSSTAB VAR=%_iter_%@prd@VMT,WrSPD,WffSPD,_CNT, FORM=12cs,
+Scripts\Highway_Assignment_Parallel.s:1773:     ROW=%_iter_%@prd@VC, RANGE=0-5-0.1,,1-99,
+Scripts\Highway_Assignment_Parallel.s:1775:     COMP=WrSPD/%_iter_%@prd@VMT, FORM=12.2cs,   ;  AVG INITIAL SPD
+Scripts\Highway_Assignment_Parallel.s:1776:     COMP=WFfSPD/%_iter_%@prd@VMT, FORM=12.2cs     ; Freeflow Speed
+Scripts\Highway_Assignment_Parallel.s:1783:     %_iter_%@prd@VOL(8.2),' ',
+Scripts\Highway_Assignment_Parallel.s:1784:     %_iter_%@prd@ffspd(5.1),' ',%_iter_%@prd@VC(6.4),' ',%_iter_%@prd@VDF(6.4),' ',
+Scripts\Highway_Assignment_Parallel.s:1785:     ftype(3.0),' ',ATYPE(3.0), ' ',%_iter_%@prd@SPD(5.1),
+Scripts\Highway_Assignment_Parallel.s:1835:  IF ('%_iter_%' = 'I4')
+Scripts\Highway_Assignment_Parallel.s:1836:      %_iter_%@PRD@SOV = V1_1
+Scripts\Highway_Assignment_Parallel.s:1837:      %_iter_%@PRD@HV2 = V2_1
+Scripts\Highway_Assignment_Parallel.s:1838:      %_iter_%@PRD@HV3 = V3_1
+Scripts\Highway_Assignment_Parallel.s:1839:      %_iter_%@PRD@CV  = V4_1
+Scripts\Highway_Assignment_Parallel.s:1840:      %_iter_%@PRD@TRK = V5_1
+Scripts\Highway_Assignment_Parallel.s:1841:      %_iter_%@PRD@APX = V6_1
+Scripts\Highway_Assignment_Parallel.s:1846: %_iter_%@prd@VOL = V_1                                                                ; Final Link Volume
+Scripts\Highway_Assignment_Parallel.s:1847: %_iter_%@prd@VMT = %_iter_%@prd@VOL * distance                                        ; Final Link VMT
+Scripts\Highway_Assignment_Parallel.s:1848: %_iter_%@prd@FFSPD  =SPEEDFOR(@prd@LANE,SPDCLASS)                                     ; Freeflow speed
+Scripts\Highway_Assignment_Parallel.s:1851: %_iter_%@prd@VC=(%_iter_%@prd@VOL*(@pctadt@/100.0)/@prd@HRLKCAP)                      ; Period VC ratio
+Scripts\Highway_Assignment_Parallel.s:1852: %_iter_%@prd@VDF = VCRV((Ftype + 1), %_iter_%@prd@VC)                                 ; Period VDF value
+Scripts\Highway_Assignment_Parallel.s:1853: if (%_iter_%@prd@VDF > 0)  %_iter_%@prd@SPD = %_iter_%@prd@FFSPD / %_iter_%@prd@VDF   ; Restrained Link speed(no Queuing delay)
+Scripts\Highway_Assignment_Parallel.s:1861:      WRSPD =ROUND(%_iter_%@prd@VMT * %_iter_%@prd@SPD)
+Scripts\Highway_Assignment_Parallel.s:1862:      WFfSPD=ROUND(%_iter_%@prd@VMT * %_iter_%@prd@FFSPD)
+Scripts\Highway_Assignment_Parallel.s:1865:    CROSSTAB VAR=%_iter_%@prd@VMT,WrSPD,WffSPD,_CNT,FORM=12cs,
+Scripts\Highway_Assignment_Parallel.s:1868:     COMP=WrSPD/%_iter_%@prd@VMT, FORM=12.2cs,   ; AVG INITIAL SPD
+Scripts\Highway_Assignment_Parallel.s:1869:     COMP=WffSPD/%_iter_%@prd@VMT, FORM=12.2cs     ; AVG FINAL SPD
+Scripts\Highway_Assignment_Parallel.s:1871:; Crosstab %_iter_%@prd@VMT,WOSPD,WNSPD,_CNT2 by ATYPE and FTYPE
+Scripts\Highway_Assignment_Parallel.s:1872:     CROSSTAB VAR=%_iter_%@prd@VMT,WrSPD,WffSPD,_CNT, FORM=12cs,
+Scripts\Highway_Assignment_Parallel.s:1875:     COMP=WrSPD/%_iter_%@prd@VMT, FORM=12.2cs,   ; AVG INITIAL SPD
+Scripts\Highway_Assignment_Parallel.s:1876:     COMP=WffSPD/%_iter_%@prd@VMT, FORM=12.2cs     ; AVG FINAL SPD
+Scripts\Highway_Assignment_Parallel.s:1880:    CROSSTAB VAR=%_iter_%@prd@VMT,WrSPD,WffSPD,_CNT, FORM=12cs,
+Scripts\Highway_Assignment_Parallel.s:1881:     ROW=%_iter_%@prd@VC, RANGE=0-5-0.1,,1-99,
+Scripts\Highway_Assignment_Parallel.s:1883:     COMP=WrSPD/%_iter_%@prd@VMT, FORM=12.2cs,   ;  AVG INITIAL SPD
+Scripts\Highway_Assignment_Parallel.s:1884:     COMP=WFfSPD/%_iter_%@prd@VMT, FORM=12.2cs     ; Freeflow Speed
+Scripts\Highway_Assignment_Parallel.s:1891:     %_iter_%@prd@VOL(8.2),' ',
+Scripts\Highway_Assignment_Parallel.s:1892:     %_iter_%@prd@ffspd(5.1),' ',%_iter_%@prd@VC(6.4),' ',%_iter_%@prd@VDF(6.4),' ',
+Scripts\Highway_Assignment_Parallel.s:1893:     ftype(3.0),' ',ATYPE(3.0), ' ',%_iter_%@prd@SPD(5.1),
+Scripts\Highway_Assignment_Parallel.s:1913:                     OLDSPD1,OLDSPD2,OLDSPD3,OLDSPD4,OLDSPD5,%_iter_%24VMT,
+Scripts\Highway_Assignment_Parallel.s:1916:         %_iter_%amspd =  LI.1.%_iter_%amspd
+Scripts\Highway_Assignment_Parallel.s:1917:         %_iter_%mdspd =  LI.2.%_iter_%mdspd
+Scripts\Highway_Assignment_Parallel.s:1918:         %_iter_%pmspd =  LI.3.%_iter_%pmspd
+Scripts\Highway_Assignment_Parallel.s:1919:         %_iter_%ntspd =  LI.4.%_iter_%ntspd
+Scripts\Highway_Assignment_Parallel.s:1922:  _VOLAM =  LI.1.%_iter_%AMVOL
+Scripts\Highway_Assignment_Parallel.s:1923:  _VOLMD =  LI.2.%_iter_%MDVOL
+Scripts\Highway_Assignment_Parallel.s:1924:  _VOLPM =  LI.3.%_iter_%PMVOL
+Scripts\Highway_Assignment_Parallel.s:1925:  _VOLNT =  LI.4.%_iter_%NTVOL
+Scripts\Highway_Assignment_Parallel.s:1928:  %_iter_%24VOL =  _VOLAM + _VOLMD + _VOLPM + _VOLNT   ; Total Daily Volume
+Scripts\Highway_Assignment_Parallel.s:1932:  %_iter_%24VMT =  0
+Scripts\Highway_Assignment_Parallel.s:1934:  %_iter_%24VMT =  %_iter_%24VOL * DISTANCE  ; Total Daily VMT
+Scripts\Highway_Assignment_Parallel.s:1987:     CROSSTAB VAR=%_iter_%24VMT, FORM=12cs,
+Scripts\Highway_Assignment_Parallel.s:1993:  CROSSTAB VAR=%_iter_%24VMT, FORM=12cs,
+Scripts\Highway_Skims_am.s:62:    MYID      = '%_iter_% AM skims'
+Scripts\Highway_Skims_am.s:82:    MYID    = '%_iter_% MD skims'
+Scripts\Highway_Skims_am.s:120:       SPEED        =  LI.%_iter_%@PRD@SPD ;Restrained speed (min)
+Scripts\Highway_Skims_md.s:62:    MYID      = '%_iter_% AM skims'
+Scripts\Highway_Skims_md.s:82:    MYID    = '%_iter_% MD skims'
+Scripts\Highway_Skims_md.s:120:       SPEED        =  LI.%_iter_%@PRD@SPD ;Restrained speed (min)
+Scripts\Highway_Skims_mod_am.s:49:    MYID    = '%_iter_% AM skims'
+Scripts\Highway_Skims_mod_am.s:55:    MYID    = '%_iter_% MD skims'
+Scripts\Highway_Skims_mod_am.s:93:       SPEED        =  LI.%_iter_%@PRD@SPD ;Restrained speed (min)
+Scripts\Highway_Skims_mod_md.s:49:    MYID    = '%_iter_% AM skims'
+Scripts\Highway_Skims_mod_md.s:55:    MYID    = '%_iter_% MD skims'
+Scripts\Highway_Skims_mod_md.s:93:       SPEED        =  LI.%_iter_%@PRD@SPD ;Restrained speed (min)
+Scripts\joinskims.s:2:;   Input skims:  ???%_iter_%@PRD@.skm
+Scripts\joinskims.s:3:;   Changed to:   ???%_iter_%@PRD@_MC.skm
+Scripts\MC_Auto_Drivers.s:186: LIST='SUMMARY OF ','@PURPOSE@',' ITERATION: ','%_iter_%','  AUTO DRIVER TRIP RESULTS'
+Scripts\MC_Auto_Drivers.s:226: LIST='===  END OF ','@PURPOSE@',' ITERATION: ','%_iter_%',' AUTO DRV RESULTS ==='
+Scripts\MC_Constraint_V23.s:54:  PATHSPECHBW = '%_tcHBW_%'    ; path specification of constraint-year HBW transit trips
+Scripts\MC_Constraint_V23.s:55:  PATHSPECHBS = '%_tcHBS_%'    ; path specification of constraint-year HBS transit trips
+Scripts\MC_Constraint_V23.s:56:  PATHSPECHBO = '%_tcHBO_%'    ; path specification of constraint-year HBO transit trips
+Scripts\MC_Constraint_V23.s:57:  PATHSPECNHW = '%_tcNHW_%'    ; path specification of constraint-year NHW transit trips
+Scripts\MC_Constraint_V23.s:58:  PATHSPECNHO = '%_tcNHO_%'    ; path specification of constraint-year NHO transit trips
+Scripts\MC_NL_Summary.s:90:DESCRIPT='Simulation - Year: %_year_% Alternative: %_alt_%   Iteration: %_iter_% '
+Scripts\Prepare_Trip_Tables_for_Assignment.s:316:Print list = '%_iter_% Iter. Pre-Traffic Assignment Trip Table Prep. Report',file=%_iter_%_Prepare_Trip_Tables_For_Assignment.txt
+Scripts\Prepare_Trip_Tables_for_Assignment.s:426:Print list = '%_iter_% Trip Table Output Totals: '              ,file=%_iter_%_Prepare_Trip_Tables_For_Assignment.txt
+Scripts\Set_CPI.S:7:ModeledYear     =  '%_year_%'              ;  Simulation Year (Defined in runall_ModelSteps_<year>.bat file)
+Scripts\Transit_Accessibility.s:106:                                                                    '  Iteration:    ','%_iter_%',
+Scripts\Trip_Distribution.s:10:;; itr = '%_iter_%'   ;;
+Scripts\Trip_Distribution.s:15:;;     AMSOVSKM = 'SOV%_prev_%am.skm'             ;  AM  HWY TIME SKIMS
+Scripts\Trip_Distribution.s:16:;;     MDSOVSKM = 'SOV%_prev_%md.skm'             ;  MD  HWY TIME SKIMS
+Scripts\Trip_Distribution.s:951:DESCRIPT    = 'SIMULATION-%_iter_% Itr Year: %_year_% Alt: %_alt_%'
+Scripts\Truck_Com_Trip_Generation.s:31:ZnFile_Ou2  = '%_iter_%ComVeh_Truck_dbg.dbf'      ;  output debug file- zonal inputs and outputs
+Transit_Assignment_LineHaul_Parallel.bat:3:if exist Transit_Assignment_%2.err   del Transit_Assignment_%2.err
+Transit_Assignment_LineHaul_Parallel.bat:4:if exist Transit_Assignment_%2.done  del Transit_Assignment_%2.done
+Transit_Assignment_LineHaul_Parallel.bat:5:@echo Transit_Assignment_%2
+Transit_Assignment_LineHaul_Parallel.bat:7:if exist %_iter_%_Transit_Assgn_%2.RPT del %_iter_%_Transit_Assgn_%2.RPT
+Transit_Assignment_LineHaul_Parallel.bat:10:start /w voyager.exe ..\Scripts\transit_assignment_%2.s /start -Pvoya -S..\%1
+Transit_Assignment_LineHaul_Parallel.bat:14:if exist voya*.prn copy voya*.prn %_iter_%_Transit_Assgn_%2.RPT /y
+Transit_Assignment_LineHaul_Parallel.bat:17:echo Error in Transit Assignment %2 > Transit_Assignment_%2.err
+Transit_Assignment_LineHaul_Parallel.bat:20:echo Finished Transit Assignment %2 > Transit_Assignment_%2.done
+Transit_Skim_All_Modes_Parallel.bat:26:if %_iter_%==pp goto runwalk
+Transit_Skim_All_Modes_Parallel.bat:44::: del /F ..\%1\hov2m%_prev_%am.skm
+Transit_Skim_All_Modes_Parallel.bat:45::: del /F ..\%1\hov2m%_prev_%op.skm
+Transit_Skim_All_Modes_Parallel.bat:46::: del /F ..\%1\hov3m%_prev_%am.skm
+Transit_Skim_All_Modes_Parallel.bat:47::: del /F ..\%1\hov3m%_prev_%op.skm
+Transit_Skim_LineHaul_Parallel.bat:4:if exist Transit_Skims_%2.err   del Transit_Skims_%2.err
+Transit_Skim_LineHaul_Parallel.bat:5:if exist Transit_Skims_%2.done  del Transit_Skims_%2.done
+Transit_Skim_LineHaul_Parallel.bat:6:@echo Transit_Skims_%2
+Transit_Skim_LineHaul_Parallel.bat:9:if exist %_iter_%_TRANSIT_SKIMS_%2.RPT  del %_iter_%_TRANSIT_SKIMS_%2.RPT
+Transit_Skim_LineHaul_Parallel.bat:10:start /w Voyager.exe ..\scripts\Transit_Skims_%2.s /start /high -Pvoya -S..\%1
+Transit_Skim_LineHaul_Parallel.bat:12:if exist voya*.prn  copy voya*.prn  %_iter_%_TRANSIT_SKIMS_%2.RPT /y
+Transit_Skim_LineHaul_Parallel.bat:15:echo Error in Transit Skim %2 > Transit_Skims_%2.err
+Transit_Skim_LineHaul_Parallel.bat:19:echo Finished Transit Skim %2 > Transit_Skims_%2.done
