@@ -6,8 +6,7 @@
 ;      distance (1/10s of mi),
 ;      tolls (2007 cts) of any FIXED price facility, such as Dulles toll road.
 ;
-; _HOV3Path_  environment variable is used to override HOV3 Skims from another Subdirectory
-;
+
 pageheight=32767  ; Preclude header breaks
 
 
