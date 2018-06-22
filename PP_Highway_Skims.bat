@@ -39,6 +39,14 @@ start /w Voyager.exe  ..\scripts\Highway_Skims_mod_am.s /start -Pvoya -S..\%1
 if errorlevel 1 goto error
 if exist voya*.prn  copy voya*.prn %_iter_%_%_iterOrder_%_Highway_Skims_Mod_am.rpt /y
 
+:: Check whether transit stations are accessible
+if exist voya*.*  del voya*.*
+if exist %_iter_%_%_iterOrder_%_CheckStationAccess.rpt  del %_iter_%_%_iterOrder_%_CheckStationAccess.rpt
+start /w Voyager.exe  ..\scripts\CheckStationAccess.s /start -Pvoya -S..\%1
+if errorlevel 2 (echo STATION CENTROIDS WITHOUT SKIMS. PLEASE CHECK THE NETWORK && goto stationerr)
+if errorlevel 3 (echo STATION CENTROIDS WITHOUT SKIMS. PLEASE CHECK THE NETWORK && goto stationerr)
+if exist voya*.prn  copy voya*.prn CheckStationAccess.rpt /y
+
 if exist voya*.*  del voya*.*
 if exist %_iter_%_%_iterOrder_%_Highway_Skims_mod_md.rpt  del %_iter_%_%_iterOrder_%_Highway_Skims_mod_md.rpt
 start /w Voyager.exe  ..\scripts\Highway_Skims_mod_md.s /start -Pvoya -S..\%1
@@ -86,6 +94,10 @@ if exist voya*.prn  copy voya*.prn %_iter_%_%_iterOrder_%_Remove_PP_Speed.rpt /y
 
 
 goto end
+
+:stationerr
+PAUSE&EXIT
+
 :error
 REM  Processing Error....
 PAUSE
